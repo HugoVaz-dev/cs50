@@ -4,15 +4,20 @@
 # firstName > first_name
 # preferrdFirstName > preferred_first_name
 
-text = input("camelCase: ")
+ans = input("camelCase: ")
+print("snake_case ", end="")
+#print the second line "snake"
+#loop 
+for a in ans:
+    if a.isupper():
+        
+        """does not work if you use the
+        variable name 'ans'
+        instead of 'a', inthe loops
+        veryfies the upper letters"""
+        
+        print("_" + a.lower(), end="")
 
-# loop word for letters
-for n in text:
-    # check for uppercase and replace with _letter
-    if n.isupper():
-        newText = "_" + n.lower()
-        # replace letter with updated _letter
-        n = newText
-    #print!
-    print(n, end="")
+    else:
+        print(a, end="")
 
